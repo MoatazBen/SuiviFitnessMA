@@ -5,12 +5,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-
 import model.Utilisateur;
 
 public class UtilisateurDAO {
 
-    private Connection connection;  // Assume that you have a database connection
+    private static Connection connection;  // Assume that you have a database connection
 
     // Constructor that takes a connection (you need to set this connection in your DAO)
     public UtilisateurDAO(Connection connection) {
@@ -46,7 +45,7 @@ public class UtilisateurDAO {
     }
 
     // Method to retrieve a user by ID from the database
-    public Utilisateur getUserByID(int userID) {
+    public static Utilisateur getUserByID(int userID) {
         Utilisateur utilisateur = null;
         String query = "SELECT * FROM Utilisateur WHERE ID_Utilisateur = ?";
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {

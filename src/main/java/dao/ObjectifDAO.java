@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
 import model.Objectif;
 
 public class ObjectifDAO {
@@ -21,12 +22,12 @@ public class ObjectifDAO {
     public void save(Objectif objectif) {
         String query = "INSERT INTO Objectif (Libelle, Date_Debut, Date_Fin, ID_Utilisateur) VALUES (?, ?, ?, ?)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
-            
+
 
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-          
+
         }
     }
 

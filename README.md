@@ -9,8 +9,7 @@ SuiviFitnessMA is a Java web application for tracking fitness activities, settin
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+  
 
 ## Introduction
 

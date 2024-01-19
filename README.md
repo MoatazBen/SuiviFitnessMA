@@ -62,7 +62,6 @@ SuiviFitnessMA is designed to help users track their fitness activities, set and
 
 - Java
 - Servlets and JSP
-- Maven
 - MySQL (or your preferred database)
 
 
